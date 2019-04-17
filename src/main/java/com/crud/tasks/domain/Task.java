@@ -6,9 +6,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 @Entity(name = "tasks")
 public class Task {
     @Id
