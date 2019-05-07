@@ -4,6 +4,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
 
 group = 'com.crud'
 version = '0.0.1-SNAPSHOT'
@@ -30,4 +31,6 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 
 	annotationProcessor("org.projectlombok:lombok")
+
+	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 }
