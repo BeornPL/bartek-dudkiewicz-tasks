@@ -45,23 +45,3 @@ public class TaskController {
         service.saveTask(taskMapper.mapToTask(taskDto));
     }
 }
-
-//    @RequestMapping(method = RequestMethod.GET, value = "getTasks/{id}")
-//    public TaskDto getTasks(@PathVariable("id") Long taskId) {
-//        return new TaskDto(1L, "test task", "test_content");
-//    }
-//
-//    @RequestMapping(method = RequestMethod.DELETE, value = "deleteTask/{id}")
-//    public void deleteTask(@PathVariable("id") Long taskId) {
-//
-//    }
-//
-//    @RequestMapping(method = RequestMethod.PUT, value = "updateTask/{taskDto}")
-//    public TaskDto updateTask(@PathVariable("taskDto") TaskDto taskDto) {
-//        return new TaskDto(1L, "Edited test title", "Test content");
-//    }
-//
-//    @RequestMapping(method = RequestMethod.POST, value = "createTask/{taskDto}")
-//    public void createTask(@PathVariable("taskDto") TaskDto taskDto) {
-//
-//    }
