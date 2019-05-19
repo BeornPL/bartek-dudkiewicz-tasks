@@ -29,7 +29,7 @@ public class SimpleEmailServiceTest {
 
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setTo(mail.getMailTo());
-        mailMessage.setCc(mail.getToCc());
+        mailMessage.setCc("");
         mailMessage.setSubject(mail.getSubject());
         mailMessage.setText(mail.getMessage());
 
